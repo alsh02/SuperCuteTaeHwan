@@ -8,16 +8,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class userController {
+public class UserController {
 
     private final UserService userService;
 
     @Autowired
-    public userController(UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
-    @PostMapping("/users/start")
+    @PostMapping("/Q1")
     public String UserPostStart(UserForm userForm) {
         User u = new User();
         u.setName(userForm.getName());

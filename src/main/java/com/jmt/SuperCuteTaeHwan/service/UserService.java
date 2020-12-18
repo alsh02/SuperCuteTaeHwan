@@ -1,6 +1,7 @@
 package com.jmt.SuperCuteTaeHwan.service;
 
 import com.jmt.SuperCuteTaeHwan.domain.User;
+import com.jmt.SuperCuteTaeHwan.repository.JpaUserRepository;
 import com.jmt.SuperCuteTaeHwan.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -11,7 +12,6 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
