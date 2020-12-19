@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="question_page3.css">
     <title>질문 페이지</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+    <script src="./login.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     <style>
         body {
+            background-image: url('https://img.lovepik.com/photo/50092/7946.jpg_wh860.jpg');
+            background-size: 1950px;
             height: 900px;
             background: url("https://img.lovepik.com/photo/50092/7946.jpg_wh860.jpg") no-repeat center/cover;
             font-family: "Gugi", cursive;
@@ -32,7 +38,11 @@
         }
 
         #quest {
-            margin: 0 0 0 -40px;
+            margin-left: -40px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-top: 0;
             font-size: 50px;
             font-weight: bold;
             display: inline-block;
@@ -52,7 +62,7 @@
             text-align: center;
         }
 
-        .body {
+        #body {
             text-align: center;
         }
 
@@ -86,14 +96,14 @@
             background-color: black;
             color: white;
             border-width: 3px;
-            font-family: "Gugi", cursive;
-            font-size: 17px;
             border-radius: 20px;
             border-color: black;
             border-style: solid;
+            font-family: "Gugi", cursive;
+            font-size: 17px;
         }
 
-        #choose1, #choose2,
+        #choose1,#choose2,
         #choose1::before, #choose2::before {
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -111,31 +121,31 @@
 </head>
 
 <body>
-<div id="container" class="main_container">
-    <div style="padding: 20px;"></div>
-    <div class="login_container">
-        <div class="title">
-            <h3 id="quest">Q2. </h3>
-            <h3 id="quest_num">2/4</h3>
-        </div>
-        <div class="body">
-            <h4 id="ques_title">다음 중 선호하는 유튜브 컨텐츠는 무엇인가요?</h4>
-            <div id="img">
-                <img id="image1" src="https://i.ytimg.com/vi/uUHZJ2lBqNY/maxresdefault.jpg">
-                <img id="image2"
-                     src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/1W8M/image/mSepwAXZUj6hmyN98q0D4gu2P14">
+    <div id="container" class="main_container">
+        <div style="padding: 20px;"></div>
+        <div class="login_container">
+            <div class="title">
+                <h3 id="quest">Q3. </h3>
+                <h3 id="quest_num">3/4</h3>
             </div>
-            <div id="quiz">
-                <form action="/dynamic/Q3" method="get">
-                    <input id="choose1" type="submit" value="예능, 게임">
-                </form>
-                <form action="/static/Q3" method="get">
-                    <input id="choose2" type="submit" value="브이로그, 다큐">
-                </form>
+            <div class="body">
+                <h4 id="ques_title">다음 중 선호하는 날씨는 무엇인가요?</h4>
+                <div id="img">
+                    <img id="image1" src="https://www.jejudomin.co.kr/news/photo/201806/102585_99236_5611.jpg">
+                    <img id="image2"
+                        src="https://cdn.crowdpic.net/list-thumb/thumb_l_F8BD7917B7FD7C02A4219A4BEA42A290.jpg">
+                </div>
+                <div id="quiz">
+                    <form action="/sunny/Q4" method="get">
+                        <input id="choose1" type="submit" value="맑은 날씨">
+                    </form>
+                    <form action="/cloudy/Q4" method="get">
+                        <input id="choose2" type="submit" value="흐린 날씨">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>

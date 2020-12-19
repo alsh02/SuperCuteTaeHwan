@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/css/mainpage.css">
     <title>연예인 취향저격</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" media="all"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url('https://img.lovepik.com/photo/50092/7946.jpg_wh860.jpg');
-            background-size: 1950px;
             height: 900px;
             background: url("https://img.lovepik.com/photo/50092/7946.jpg_wh860.jpg") no-repeat center/cover;
         }
@@ -50,9 +46,8 @@
         .form_input {
             width: 98%;
             height: 30px;
-            border: 1px solid;
             border-radius: 100px;
-            border-color: black;
+            border: 1px solid black;
             padding-left: 10px;
             font-family: 'Gugi', cursive;
         }
@@ -86,71 +81,71 @@
     </style>
 </head>
 <body>
-<div id="container" class="main_container">
-    <div style="padding: 20px;"></div>
-    <div class="login_container">
-        <div class="form_container">
-            <div class="form_title_div">
-                <p class="form_title_p">연예인 취향저격</p>
-            </div>
-            <div>
-                <img src="https://cdnimage.dailian.co.kr/news/202002/news_1582877649_871964_m_1.jpeg"
-                     style="width: 300px;">
-            </div>
-            <br>
-            <div>
-                <div>
-                    <a class="form_item_name">이름</a>
+<form action="/Q1" method="post">
+    <div id="container" class="main_container">
+        <div style="padding: 20px;"></div>
+        <div class="login_container">
+            <div class="form_container">
+                <div class="form_title_div">
+                    <p class="form_title_p">연예인 취향저격</p>
                 </div>
                 <div>
-                    <input type="text" name="name" placeholder="이름" class="form_input"/>
+                    <img src="https://cdnimage.dailian.co.kr/news/202002/news_1582877649_871964_m_1.jpeg"
+                         style="width: 300px;">
                 </div>
-                <div class="form_text_alert_padding">
-                    <div id="alert_username" class="form_text_alert"></div>
-                </div>
-            </div>
-            <div>
+                <br>
                 <div>
-                    <a class="form_item_name">나이</a>
-                </div>
-                <div>
-                    <input type="text" name="age" placeholder="나이를 입력하세요(숫자만 입력하세요)" class="form_input"/>
-                </div>
-                <div class="form_text_alert_padding">
-                    <div id="alert_age" class="form_text_alert"></div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a class="form_item_name">성별</a>
+                    <div>
+                        <a class="form_item_name">이름</a>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="이름" class="form_input">
+                    </div>
+                    <div class="form_text_alert_padding">
+                        <div id="alert_username" class="form_text_alert"></div>
+                    </div>
                 </div>
                 <div>
-                    <input type="text" name="gender" placeholder="남성/여성" class="form_input"/>
+                    <div>
+                        <a class="form_item_name">나이</a>
+                    </div>
+                    <div>
+                        <input type="text" name="age" placeholder="나이를 입력하세요(숫자만 입력하세요)" class="form_input">
+                    </div>
+                    <div class="form_text_alert_padding">
+                        <div id="alert_age" class="form_text_alert"></div>
+                    </div>
                 </div>
-                <div class="form_text_alert_padding">
-                    <div id="alert_gender" class="form_text_alert"></div>
-                </div>
-            </div>
-            <div>
                 <div>
-                    <a class="form_item_name">소속</a>
+                    <div>
+                        <a class="form_item_name">성별</a>
+                    </div>
+                    <div>
+                        <input type="text" name="gender" placeholder="남성/여성" class="form_input">
+                    </div>
+                    <div class="form_text_alert_padding">
+                        <div id="alert_gender" class="form_text_alert"></div>
+                    </div>
                 </div>
                 <div>
-                    <input type="text" name="belong" onfocus="" placeholder="자신이 소속되어 있는 곳을 적어주세요"
-                           class="form_input">
+                    <div>
+                        <a class="form_item_name">소속</a>
+                    </div>
+                    <div>
+                        <input type="text" name="belong" onfocus="" placeholder="자신이 소속되어 있는 곳을 적어주세요"
+                               class="form_input">
+                    </div>
+                    <div class="form_text_alert_padding">
+                        <div id="alert_belong" class="form_text_alert"></div>
+                    </div>
                 </div>
-                <div class="form_text_alert_padding">
-                    <div id="alert_belong" class="form_text_alert"></div>
-                </div>
-            </div>
-            <div style="height: 10px;"></div>
-            <form action="/Q1" method="post">
+                <div style="height: 10px;"></div>
                 <div>
                     <input type="submit" class="form_submit_button" value="시작하기">
                 </div>
-            </form>
+            </div>
         </div>
     </div>
-</div>
+</form>
 </body>
 </html>

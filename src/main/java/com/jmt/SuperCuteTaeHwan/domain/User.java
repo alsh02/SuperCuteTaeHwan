@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/* 유저 엔티티 */
 @Entity
 public class User {
 
@@ -15,7 +16,6 @@ public class User {
     String gender;
     int age;
     String belong;
-    String celebrity;
 
     public String getName() {
         return name;
@@ -47,13 +47,5 @@ public class User {
 
     public void setBelong(String belong) {
         this.belong = belong;
-    }
-
-    public String getCelebrity() {
-        return celebrity;
-    }
-
-    public void setCelebrity(String celebrity) {
-        this.celebrity = celebrity;
     }
 }
